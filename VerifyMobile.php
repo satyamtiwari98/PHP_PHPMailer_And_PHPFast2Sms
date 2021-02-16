@@ -21,6 +21,10 @@
         color: brown;
 
     }
+    h6 {
+        text-align: center;
+        color: green;
+    }
 
     </style>
 
@@ -77,6 +81,7 @@ if ($err) {
     echo "<h1> OTP Verification</h1><br>";
     echo "<input type='number' id='otp' class='form-control' placeholder='Enter Your OTP ' name='num'><br>";
     echo "<button id='sub' class='btn btn-primary' onclick='verify()'>Submit</button><br>";
+    echo "<h6>An OTP has been Sent to your mobile number :- ".$number."</h6>";
     echo "</div>";
    
 }

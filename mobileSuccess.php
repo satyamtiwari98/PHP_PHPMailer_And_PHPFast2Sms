@@ -21,6 +21,16 @@
         padding: 200px;
         
     }
+    #msg {
+
+        text-align: center;
+
+    }
+
+    b {
+        
+        color: orange;
+    }
     </style>
     <title>Home</title>
 </head>
@@ -28,17 +38,19 @@
 <div class="container-fluid">
 
 <h1>Registeration Done SuccessFully !!!!</h1>
+<div id="msg">
 <?php
 
 if(isset($_SESSION['naam'])&&isset($_SESSION['num'])) {
 
-    echo "Name : ".$_SESSION['naam']."<br>";
-    echo "Mobile Number : ".$_SESSION['num']."<br>";
+    echo "<h2>Name : <b>".$_SESSION['naam']."</b></h2><br>";
+    echo "<h2>Mobile Number : <b>".$_SESSION['num']."</b></h2><br>";
     
 }
 
 
 ?>
+</div>
 </div>
 
     

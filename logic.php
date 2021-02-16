@@ -22,6 +22,10 @@
         color: brown;
 
     }
+    h6 {
+        text-align: center;
+        color: green;
+    }
 
     </style>
 
@@ -72,7 +76,7 @@ $mail->isSMTP();
 $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;
 $mail->Username = "satyamtiwari1598@gmail.com";
-$mail->Password = "yourPassword";
+$mail->Password = "satyam@tiwari.98";
 $mail->Port = 465;
 $mail->SMTPSecure = "ssl";
 $otpForVerification = rand(1001,9999);
@@ -92,6 +96,7 @@ if($mail->send()) {
     echo "<h1> OTP Verification</h1><br>";
     echo "<input type='number' id='otp' class='form-control' placeholder='Enter Your OTP ' name='num'><br>";
     echo "<button id='sub' class='btn btn-primary' onclick='verify()'>Submit</button><br>";
+    echo "<h6>An OTP has been Sent to your email :- ".$email."</h6>";
     echo "</div>";
    
 
